@@ -3,6 +3,8 @@ package oop_164021_AziAprianto.week01
 fun main() {
     val name: String = "Jhon Thor"
     val score: Int = 80
+    val studentId: String? = null
+    val idLength: Int = studentId?.length ?: 0
 
     println("Nama: $name, Nilai: $score")
     val grade = when (score) {
@@ -13,6 +15,7 @@ fun main() {
     }
     println("Grade kamu: $grade")
     println("Status: ${calculatestatus(score)}")
+    println("Panjang ID: $idLength")
 }
 
 fun calculatestatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
