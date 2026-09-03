@@ -1,6 +1,6 @@
 package oop_164021_AziAprianto.week01
 
-fun main (args: Array<String>) {
+fun main () {
     val radius: Double = 7.0
     val pi: Double = 3.14
 
