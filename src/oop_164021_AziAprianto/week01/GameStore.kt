@@ -8,6 +8,9 @@ fun main() {
 
     println("Harga Asli: $price")
     printReceipt(title = gameTitle, finalPrice = finalPrice)
+
+    val userNote: String? = null
+    println("Catatan: ${userNote ?: "Tidak ada catatan"}")
 }
 
 fun calculateDiscount(price: Int): Int =
