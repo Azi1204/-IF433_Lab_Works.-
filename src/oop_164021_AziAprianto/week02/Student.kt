@@ -5,8 +5,8 @@ import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.len
 class Student (
     val name: String,
     val nim: String,
-    var major: String,
     var gpa: Double = 0.0,
+    var major: String
 ) {
 
     init {
