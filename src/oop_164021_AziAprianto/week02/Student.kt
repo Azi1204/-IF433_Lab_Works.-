@@ -2,7 +2,13 @@ package oop_164021_AziAprianto.week02
 
 import com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.length
 
-class Student (val name: String, val nim: String, var major: String) {
+class Student (
+    val name: String,
+    val nim: String,
+    var major: String,
+    var gpa: Double = 0.0,
+) {
+
     init {
       if (nim.length != 5){
           println("WARNING: Objek tercipta dengan NIM ($nim) yang tidak valid!")
