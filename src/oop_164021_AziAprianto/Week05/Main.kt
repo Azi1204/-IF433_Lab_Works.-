@@ -39,6 +39,17 @@ fun main() {
     for (metode in daftarPembayaran) {
         println("Memproses pembayaran 75000.0 dengan akun [${metode.accountName}]")
         metode.processPayment(75000.0)
+
+
+        if (metode is EWallet) {
+            println("=> Metode pembayaran EWallet terdeteksi. Melakukan Top Up otomatis...")
+            metode.topUp(50000.0)
+
+            println("Mencoba memproses pembayaran kembali...")
+            metode.processPayment(75000.0)
+        }
+        println("")
+
     }
 }
 
