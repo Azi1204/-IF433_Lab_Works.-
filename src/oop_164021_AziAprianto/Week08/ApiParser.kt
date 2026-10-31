@@ -5,7 +5,7 @@ class ApiParser {
         val id = requireNotNull(rawJson["id"] as? String) { "API Invalid: Missing ID" }
         val name = requireNotNull(rawJson["name"] as? String) { "API Invalid: Missing Name" }
         val type = rawJson["type"] as? String
-        //
+
         return when (type) {
             "ELECTRONIC" -> {
                 val warranty = rawJson["warranty"] as? Int ?: 12
