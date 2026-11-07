@@ -11,7 +11,7 @@ fun main() {
     )
 
     val parser = ApiParser()
-    //final
+
     for (raw in rawApiData) {
         try {
             parser.parseProduct(raw)?.let { parser.checkout(it) }
