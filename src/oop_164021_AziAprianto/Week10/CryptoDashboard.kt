@@ -18,7 +18,7 @@ fun main() {
     txRepo.add(Transaction("TX-001", 0.1))
     txRepo.add(Transaction("TX-002", 250.0))
     txRepo.add(Transaction("TX-003", 12.5))
-//
+
     println("\n=== DAFTAR TRANSAKSI ===")
     txRepo.getAll().forEach {
         println("ID: ${it.id}, Jumlah: ${it.amount}")
